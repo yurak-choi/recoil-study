@@ -1,10 +1,12 @@
 import React from 'react';
+import {RecoilRoot} from 'recoil';
+import TodoList from './components/TodoList';
 
 function App() {
   return (
-    <div className="App">
-      test
-    </div>
+    <RecoilRoot>
+      <TodoList />
+    </RecoilRoot>
   );
 }
 
