@@ -1,11 +1,13 @@
 import React from 'react';
 import {RecoilRoot} from 'recoil';
-import TodoList from './components/tutorial/TodoList';
+import Async from './components/async';
 
 function App() {
   return (
     <RecoilRoot>
-      <TodoList />
+      <React.Suspense fallback={<div>Loading...</div>}>
+        <Async />
+      </React.Suspense>
     </RecoilRoot>
   );
 }
