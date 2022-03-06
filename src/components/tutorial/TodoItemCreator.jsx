@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {useSetRecoilState} from 'recoil';
-import {todoListState} from '../recoil';
+import {todoListState} from '../../recoil/tutorial';
 
 // 고유한 Id 생성을 위한 유틸리티
 let id = 0;
